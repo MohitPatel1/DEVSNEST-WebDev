@@ -1,0 +1,11 @@
+const thirdColor = document.getElementById("light-three")
+const secondColor = document.getElementById("light-two")
+const firstColor = document.getElementById("light-one")
+
+const red = window.getComputedStyle(thirdColor).background;
+const green = window.getComputedStyle(secondColor).background;
+const yellow = window.getComputedStyle(firstColor).backgroundColor;
+
+thirdColor.style.background = green;
+firstColor.style.background = red;
+secondColor.style.background = yellow;

@@ -1,0 +1,7 @@
+var error 
+
+try {
+  error = customError();
+} catch(cError) {
+  error = cError;
+}

@@ -1,0 +1,12 @@
+let count = document.getElementById("counter"); 
+let countValue = count.textContent;
+
+function countIncrement(countValue){
+  count.textContent = Number(count.textContent) + 1;
+}
+function countDecrement(countValue){
+  count.textContent = Number(count.textContent) - 1;
+}
+
+document.getElementById("decrement").addEventListener("click" , countDecrement)
+document.getElementById("increment").addEventListener("click" , countIncrement)

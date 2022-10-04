@@ -1,0 +1,16 @@
+const COLOR = 'rgb(128, 128, 255)'
+
+/* code from here */
+const letterList = document.getElementsByClassName("letter");
+
+
+window.addEventListener("keypress", function lightUp(e){
+  let keyPressed = e.key;
+  if (letterList.includes(keyPressed)){
+    for(let element of letterList){
+      if(keyPressed.toUpperCase() == element.innerText){
+        element.style.color  = COLOR;
+      }
+    }
+  }  
+});
